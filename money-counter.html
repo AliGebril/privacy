@@ -3,66 +3,245 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<meta name="description" content="Privacy policy for the Money Counter Android app: what stays on your phone, what the app sends, who processes it, and how to have it deleted.">
 <title>Privacy Policy – Money Counter</title>
 <style>
-  :root { color-scheme: light dark; }
-  body { font-family: -apple-system, "Segoe UI", Roboto, Arial, sans-serif; max-width: 720px; margin: 0 auto; padding: 24px 16px 48px; line-height: 1.6; }
-  h1 { font-size: 1.6rem; margin-bottom: 0; }
-  h2 { font-size: 1.15rem; margin-top: 1.8em; }
-  .meta { color: #777; margin-top: 4px; }
-  table { border-collapse: collapse; width: 100%; font-size: 0.95rem; }
-  th, td { text-align: left; vertical-align: top; padding: 8px 6px; border-bottom: 1px solid #8884; }
-  [dir="rtl"] th, [dir="rtl"] td { text-align: right; }
-  .ar { margin-top: 3em; padding-top: 1.5em; border-top: 2px solid #8884; }
+  :root {
+    --bg: #ffffff;
+    --surface: #f5f6f8;
+    --line: #e2e5ea;
+    --text: #1a1d21;
+    --muted: #5d646e;
+    --link: #0b57d0;
+    --radius: 12px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #121417;
+      --surface: #1b1f24;
+      --line: #2c323a;
+      --text: #e8eaed;
+      --muted: #a0a7b0;
+      --link: #8ab4f8;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.65;
+  }
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 40px 20px 72px;
+  }
+  header { margin-bottom: 32px; }
+  h1 {
+    font-size: 1.75rem;
+    line-height: 1.25;
+    font-weight: 700;
+    margin: 0 0 8px;
+    letter-spacing: -0.01em;
+  }
+  .meta {
+    color: var(--muted);
+    font-size: 0.9375rem;
+    margin: 0;
+  }
+  .meta code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: 0.875em;
+  }
+  .summary {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 16px 20px;
+    margin: 24px 0 0;
+  }
+  .summary p { margin: 0 0 8px; font-weight: 600; }
+  .summary ul { margin: 0; padding-left: 20px; }
+  .summary li { margin: 4px 0; }
+  h2 {
+    font-size: 1.1875rem;
+    font-weight: 700;
+    margin: 40px 0 12px;
+    line-height: 1.3;
+  }
+  p { margin: 0 0 14px; }
+  p:last-child { margin-bottom: 0; }
+  a { color: var(--link); text-decoration: underline; text-underline-offset: 2px; }
+  a:hover { text-decoration-thickness: 2px; }
+  strong { font-weight: 600; }
+  ul { padding-left: 22px; margin: 0 0 14px; }
+  li { margin: 6px 0; }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 4px 0 16px;
+    font-size: 0.9375rem;
+  }
+  th, td {
+    text-align: left;
+    vertical-align: top;
+    padding: 12px 10px;
+    border-bottom: 1px solid var(--line);
+  }
+  th {
+    font-weight: 600;
+    color: var(--muted);
+    font-size: 0.8125rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    padding-top: 0;
+  }
+  td:first-child { font-weight: 600; }
+  th:nth-child(1) { width: 17%; }
+  th:nth-child(2) { width: 47%; }
+  th:nth-child(3) { width: 20%; }
+  th:nth-child(4) { width: 16%; }
+  tr:last-child td { border-bottom: none; }
+  .note {
+    color: var(--muted);
+    font-size: 0.9375rem;
+  }
+  footer {
+    margin-top: 48px;
+    padding-top: 16px;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 0.875rem;
+  }
+  @media (max-width: 560px) {
+    main { padding: 28px 16px 56px; }
+    h1 { font-size: 1.5rem; }
+    table, thead, tbody, tr, th, td { display: block; }
+    thead { display: none; }
+    tr {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 12px 14px;
+      margin-bottom: 12px;
+      background: var(--surface);
+    }
+    td {
+      padding: 4px 0;
+      border-bottom: none;
+    }
+    td:first-child { font-size: 1rem; padding-bottom: 6px; }
+    td[data-label]::before {
+      content: attr(data-label);
+      display: block;
+      color: var(--muted);
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      margin-top: 8px;
+    }
+  }
 </style>
 </head>
 <body>
+<main>
 
-<h1>Privacy Policy – Money Counter</h1>
-<p class="meta">Last updated: 23 October 2026 · Applies to the Android app “Money Counter: Cash Calculator” (package <code>com.gebril.moneycounter</code>), published on Google Play by Mohamed Gerbil.</p>
+<header>
+  <h1>Privacy Policy – Money Counter</h1>
+  <p class="meta">Effective 23 October 2026 · Applies to the Android app <strong>Money Counter: Cash Calculator</strong> (package <code>com.gebril.moneycounter</code>), published on Google Play by Mohamed Gerbil.</p>
 
-<p>Money Counter counts cash. It needs no account, asks for no personal information and works offline. This page explains the small amount of technical data the app sends to the services it is built on, why, and how to have it deleted.</p>
+  <div class="summary">
+    <p>In short</p>
+    <ul>
+      <li>No account, no personal details, no advertising. The app works offline.</li>
+      <li>Your counts, history, notes, settings and backups stay on your phone.</li>
+      <li>The app sends only technical data: usage statistics, crash reports, random installation IDs, and the record of a Pro purchase.</li>
+      <li>That data is processed by Google (Firebase, Google Play) and RevenueCat on our behalf. It is never sold or shared with advertisers.</li>
+      <li>To have it deleted, email <a href="mailto:support.gebril@gmail.com">support.gebril@gmail.com</a>.</li>
+    </ul>
+  </div>
+</header>
 
 <h2>1. What stays on your phone</h2>
-<p>Everything you enter stays on your device and is never sent to us: your counts, the saved history and its notes, targets, denominations, currency and format settings, themes, and the backup files you create. Backup files are written only where you choose to save them (for example your Google Drive or an email you send yourself) and we have no access to them. The app shows a link to our other apps only to users in Egypt; that check uses your phone’s time zone and SIM country on the device itself and sends nothing anywhere.</p>
+<p>Everything you enter is stored only on your device and is never sent to us: your counts, the saved history and its notes, targets, denominations, currency and format settings, themes, and the backup files you create. A backup file is written only where you choose to save it (for example your Google Drive, or an email you send to yourself); we have no access to it. PDF and Excel reports are created on the device and shared only with the apps you pick.</p>
+<p>The app shows a link to our other apps only to users in Egypt. That check uses your phone's time zone and SIM country on the device itself and sends nothing anywhere.</p>
 
-<h2>2. Data the app collects</h2>
+<h2>2. Data the app sends</h2>
 <table>
-<tr><th>Data</th><th>What it is</th><th>Why</th><th>Service</th></tr>
-<tr><td>App activity</td><td>Which screens and features are used (for example that a count was saved or a report was exported), the app language and settings choices. Never the amounts you count or the content of your notes.</td><td>To understand which features matter and improve the app</td><td>Google Analytics for Firebase</td></tr>
-<tr><td>App info and performance</td><td>Crash reports and diagnostics: stack traces, device model, operating system version, app version, free memory at the time of a crash.</td><td>To find and fix crashes</td><td>Firebase Crashlytics</td></tr>
-<tr><td>Device or other identifiers</td><td>A random Firebase installation ID created for this installation, and the Android advertising ID (used only to count installs and sessions; we show no ads).</td><td>To count users and sessions without knowing who you are</td><td>Google Firebase</td></tr>
-<tr><td>Purchase history</td><td>Whether this installation owns Money Counter Pro, the product bought, the date and the store transaction reference. Google Play processes the payment itself; we never see your card or bank details.</td><td>To unlock Pro and restore it on a new phone</td><td>RevenueCat, Google Play Billing</td></tr>
+  <thead>
+    <tr><th>Data</th><th>What it is</th><th>Why</th><th>Processed by</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>App activity</td>
+      <td data-label="What it is">Which screens and features are used (for example that a count was saved or a report was exported), and your app settings: language, theme, number and date format, chosen currency. Never the amounts you count or the text of your notes.</td>
+      <td data-label="Why">To see which features matter and improve the app</td>
+      <td data-label="Processed by">Google Analytics for Firebase</td>
+    </tr>
+    <tr>
+      <td>Crash reports</td>
+      <td data-label="What it is">Stack traces and diagnostics when the app crashes or freezes: device model, Android version, app version, free memory at that moment.</td>
+      <td data-label="Why">To find and fix crashes</td>
+      <td data-label="Processed by">Firebase Crashlytics</td>
+    </tr>
+    <tr>
+      <td>Identifiers</td>
+      <td data-label="What it is">A random Firebase installation ID created for this installation, a random RevenueCat customer ID, and the Android advertising ID, which Firebase uses only to count installs and sessions. We show no ads. You can reset or delete the advertising ID in Android settings at any time.</td>
+      <td data-label="Why">To count users and sessions without knowing who you are</td>
+      <td data-label="Processed by">Google Firebase, RevenueCat</td>
+    </tr>
+    <tr>
+      <td>Purchase history</td>
+      <td data-label="What it is">Whether this installation owns Money Counter Pro: the product, the date and the Google Play transaction reference. Google Play handles the payment itself; we never see your card or bank details.</td>
+      <td data-label="Why">To unlock Pro and restore it on a new phone</td>
+      <td data-label="Processed by">RevenueCat, Google Play Billing</td>
+    </tr>
+    <tr>
+      <td>Region and language</td>
+      <td data-label="What it is">Your country code, language and time zone from your phone's settings, plus the Android and app versions.</td>
+      <td data-label="Why">To deliver remote settings by region (for example a seasonal offer)</td>
+      <td data-label="Processed by">Firebase Remote Config</td>
+    </tr>
+  </tbody>
 </table>
-<p>Firebase also receives your country and language (from your phone’s settings and a masked IP address) so that remote settings can be tailored by region. We do not collect your precise location, contacts, photos, files, messages or any personal details.</p>
+<p class="note">Firebase also derives an approximate region from a masked IP address for its statistics. The app never asks for or collects your precise location, contacts, photos, files, messages, or any personal details.</p>
 
 <h2>3. Who processes the data</h2>
-<p>The data above is processed by two providers on our behalf and under their own terms: <strong>Google</strong> (Firebase Analytics, Crashlytics, Remote Config and Google Play Billing; <a href="https://firebase.google.com/support/privacy">Firebase privacy information</a>) and <strong>RevenueCat</strong> (purchase management; <a href="https://www.revenuecat.com/privacy">RevenueCat privacy policy</a>). We do not sell data, we do not share it with advertisers or business partners, and the app contains no advertising. Data may be processed on servers outside your country. We may disclose data only if the law requires it.</p>
+<p>The data above is processed by two providers on our behalf and under their own terms: <strong>Google</strong> (Firebase Analytics, Crashlytics and Remote Config, and Google Play Billing; see <a href="https://firebase.google.com/support/privacy">Firebase privacy and security</a>) and <strong>RevenueCat</strong> (purchase management; see the <a href="https://www.revenuecat.com/privacy">RevenueCat privacy policy</a>). Their servers may be located outside your country.</p>
+<p>We do not sell data, we do not share it with advertisers or business partners, and the app contains no advertising. We would disclose data only if required to do so by law.</p>
+<p>The app also uses Google Play services for in-app reviews and update checks, and opens Google Play when you tap one of our other apps. Those interactions are governed by <a href="https://policies.google.com/privacy">Google's privacy policy</a>.</p>
 
 <h2>4. How long data is kept</h2>
-<p>Analytics data is kept by Google for up to 14 months, crash reports for 90 days. Purchase records are kept for as long as needed to keep your Pro purchase working and to meet accounting obligations. Uninstalling the app ends all collection; reinstalling it creates a new installation ID that is not linked to the old one.</p>
+<ul>
+  <li>Usage statistics: up to 14 months at Google, then only as aggregated totals.</li>
+  <li>Crash reports: 90 days.</li>
+  <li>Purchase records: for as long as needed to keep your Pro purchase working and to meet accounting obligations.</li>
+  <li>If you email us, we keep your message and address only to answer you.</li>
+</ul>
+<p>Uninstalling the app ends all collection. Reinstalling it creates new random IDs that are not linked to the old ones.</p>
 
 <h2>5. Deleting your data</h2>
-<p>You can delete everything stored on the phone from the app itself (clear the history, or uninstall the app). To have the technical data described above deleted from our providers, email us at <a href="mailto:support.gebril@gmail.com">support.gebril@gmail.com</a> from the phone with the app installed, and we will arrange the deletion with Google and RevenueCat within 30 days. We cannot delete data we cannot identify, so please write from the device in question and mention “Money Counter”.</p>
+<p>Everything stored on the phone can be deleted from the app itself (clear the history) or by uninstalling the app.</p>
+<p>To have the technical data described above deleted from our providers, email <a href="mailto:support.gebril@gmail.com">support.gebril@gmail.com</a> from the phone that has the app installed and mention “Money Counter”. We will arrange the deletion with Google and RevenueCat within 30 days. Because the data carries no personal details, we can only identify it with the help of the device it came from.</p>
 
 <h2>6. Security</h2>
 <p>All data is sent over encrypted connections (HTTPS). No method of transmission or storage is completely secure, but the data the app sends is technical and contains no personal details.</p>
 
 <h2>7. Children</h2>
-<p>The app is not directed at children under 13 and we do not knowingly collect personal data from them. If you believe a child has provided us with personal data, contact us and we will delete it.</p>
+<p>The app is not directed at children under 13, and we do not knowingly collect personal data from them. If you believe a child has provided us with personal data, contact us and we will delete it.</p>
 
 <h2>8. Changes to this policy</h2>
-<p>When this policy changes, the new version is published on this page with a new “Last updated” date. Changes that matter are also mentioned in the app’s update notes.</p>
+<p>When this policy changes, the new version is published on this page with a new effective date. Changes that affect you are also mentioned in the app's update notes.</p>
 
 <h2>9. Contact</h2>
 <p>Mohamed Gerbil · <a href="mailto:support.gebril@gmail.com">support.gebril@gmail.com</a></p>
 
-<section class="ar" dir="rtl" lang="ar">
-<h2>ملخص بالعربية</h2>
-<p>عدّاد النقود لا يطلب حسابًا ولا بيانات شخصية، ويعمل دون إنترنت. كل ما تدخله (العدّات، السجل، الملاحظات، الإعدادات، النسخ الاحتياطية) يبقى على هاتفك ولا يُرسَل إلينا.</p>
-<p>التطبيق يرسل بيانات تقنية فقط: استخدام الشاشات والميزات (دون المبالغ أو نصوص الملاحظات)، وتقارير الأعطال، ورقم تعريف عشوائي لهذا التثبيت ومعرّف الإعلانات في أندرويد، وسجل شراء نسخة برو. تُعالَج هذه البيانات لدى Google (Firebase وGoogle Play) وRevenueCat نيابةً عنا. لا نبيع البيانات، ولا نشاركها مع معلنين أو شركاء، ولا يحتوي التطبيق على إعلانات.</p>
-<p>لحذف بياناتك التقنية راسلنا على <a href="mailto:support.gebril@gmail.com">support.gebril@gmail.com</a> من الهاتف المثبَّت عليه التطبيق، وسنُتمّ الحذف خلال 30 يومًا. إزالة التطبيق توقف جمع البيانات نهائيًا.</p>
-</section>
+<footer>Money Counter is developed independently and sold through Google Play.</footer>
 
+</main>
 </body>
 </html>
