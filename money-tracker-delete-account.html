@@ -11,7 +11,7 @@
   @media (prefers-color-scheme: dark) { :root { --bg:#121417; --surface:#1b1f24; --line:#2c323a; --text:#e8eaed; --muted:#a0a7b0; --link:#8ab4f8; } }
   * { box-sizing: border-box; }
   html { -webkit-text-size-adjust: 100%; }
-  body { margin:0; background:var(--bg); color:var(--text); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans Arabic",sans-serif; font-size:16px; line-height:1.65; }
+  body { margin:0; background:var(--bg); color:var(--text); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif; font-size:16px; line-height:1.65; }
   main { max-width:720px; margin:0 auto; padding:40px 20px 72px; }
   header { margin-bottom:32px; }
   h1 { font-size:1.75rem; line-height:1.25; font-weight:700; margin:0 0 8px; letter-spacing:-0.01em; }
@@ -32,15 +32,12 @@
   th { font-weight:600; color:var(--muted); font-size:.8125rem; text-transform:uppercase; letter-spacing:.04em; padding-top:0; }
   td:first-child { font-weight:600; }
   tr:last-child td { border-bottom:none; }
-  .lang { display:flex; gap:12px; margin:0 0 24px; font-size:.9375rem; }
   .note { color:var(--muted); font-size:.9375rem; }
   footer { margin-top:48px; padding-top:16px; border-top:1px solid var(--line); color:var(--muted); font-size:.9375rem; }
-  section[dir=rtl] { margin-top:64px; padding-top:32px; border-top:2px solid var(--line); }
 </style>
 </head>
 <body>
 <main>
-<nav class="lang"><a href="#en">English</a> · <a href="#ar">العربية</a></nav>
 <section id="en" lang="en">
 <header>
   <h1>Delete your Money Tracker account and data</h1>
@@ -83,50 +80,6 @@
   <li>To delete particular data without deleting the account, delete it in the app at any time (a transaction, a goal, a wallet…), or write to us with what you want removed.</li>
 </ul>
 <p>Contact: <a href="mailto:support.gebril@gmail.com">support.gebril@gmail.com</a> · <a href="money-tracker.html">Privacy policy</a></p>
-
-</section>
-<section id="ar" lang="ar" dir="rtl">
-<header>
-  <h1>حذف حسابك وبياناتك في متتبّع النقود</h1>
-  <p class="meta">متتبّع النقود: مدير المصروفات (الحزمة <code>com.gebril.moneytracker</code>)، المنشور على Google Play باسم Mohamed Gerbil. آخر تحديث: 16 نوفمبر 2026.</p>
-</header>
-<p>يمكنك حذف حسابك في متتبّع النقود وكل البيانات المرتبطة به في أي وقت.</p>
-
-<h2>الطريقة 1: من داخل التطبيق (فورية)</h2>
-<ul>
-  <li>افتح متتبّع النقود وسجّل الدخول.</li>
-  <li>اذهب إلى الإعدادات › الحساب › حذف الحساب.</li>
-  <li>أكّد هويتك (كلمة المرور أو حساب Google) ثم أكّد الحذف.</li>
-</ul>
-<p>يُحذف كل شيء خلال ثوانٍ وتعود إلى شاشة تسجيل الدخول.</p>
-
-<h2>الطريقة 2: من دون التطبيق</h2>
-<p>أرسل رسالة إلى <a href="mailto:support.gebril@gmail.com?subject=Delete%20my%20Money%20Tracker%20account">support.gebril@gmail.com</a> من البريد المرتبط بحسابك، وعنوانها: «حذف حسابي في متتبّع النقود». نحذف الحساب وبياناته خلال 14 يومًا على الأكثر ونرد عليك عند الانتهاء.</p>
-
-<h2>ما يُحذف</h2>
-<ul>
-  <li>الحساب نفسه: البريد الإلكتروني والاسم ووسيلة تسجيل الدخول.</li>
-  <li>المعاملات والفئات والميزانيات والأهداف والمبالغ المدّخرة فيها والمحافظ والمعاملات المتكررة والذهب والفضة والتفضيلات المحفوظة في الحساب.</li>
-  <li>صور الإيصالات والملاحظات التي أرسلتها من التطبيق.</li>
-  <li>المساحات المشتركة التي تملكها بكل ما فيها، عند جميع أعضائها. ومن المساحة المشتركة التي أنت عضو فيها فقط تُزال أنت (مع اسمك ودورك فيها) ويُحذف ما أضفته فيها.</li>
-</ul>
-
-<h2>ما يبقى ولماذا</h2>
-<ul>
-  <li>سجل المشتريات (المنتج والتاريخ والحالة) لدى Google Play وRevenueCat، للفوترة والاسترداد والضرائب، وفق سياساتهما.</li>
-  <li>إحصاءات الاستخدام دون بريدك (حتى 14 شهرًا) وتقارير الأعطال (حوالي 90 يومًا)، ثم تُحذف تلقائيًا.</li>
-  <li>ما أضفته في مساحة مشتركة غادرتها قبل حذف الحساب يبقى فيها حتى يحذفها مالكها (مغادرة المساحة تُبقي معاملاتك فيها للآخرين).</li>
-  <li>إعدادات الهاتف نفسه (اللغة والمظهر والصيغ) تبقى على جهازك حتى تحذف التطبيق أو تمسح بياناته.</li>
-</ul>
-
-<h2>مهم</h2>
-<ul>
-  <li>حذف الحساب لا يلغي اشتراك برو. ألغِه أولًا من Google Play › الدفعات والاشتراكات › الاشتراكات.</li>
-  <li>حساب الضيف يُمحى بمجرد تسجيل الخروج منه.</li>
-  <li>لإيقاف المشاركة دون حذف الحساب، غادر المساحة من الإعدادات › الحساب › المساحات؛ ومن هناك يستطيع المالك حذف المساحة عند الجميع.</li>
-  <li>لحذف بيانات معيّنة دون حذف الحساب: احذفها من التطبيق في أي وقت (المعاملة أو الهدف أو المحفظة…)، أو راسلنا بما تريد حذفه.</li>
-</ul>
-<p>التواصل: <a href="mailto:support.gebril@gmail.com">support.gebril@gmail.com</a> · <a href="money-tracker.html">سياسة الخصوصية</a></p>
 
 </section>
 <footer>
