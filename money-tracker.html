@@ -41,13 +41,13 @@
 <section id="en" lang="en">
 <header>
   <h1>Privacy Policy – Money Tracker</h1>
-  <p class="meta">Last updated 26 November 2026 · Applies to the Android app Money Tracker: Expense Manager (package <code>com.gebril.moneytracker</code>), version 1.1.0 and later, published on Google Play by Mohamed Gerbil.</p>
+  <p class="meta">Last updated 27 November 2026 · Applies to the Android app Money Tracker: Expense Manager (package <code>com.gebril.moneytracker</code>), version 1.1.0 and later, published on Google Play by Mohamed Gerbil.</p>
   <div class="summary">
     <p>In short</p>
     <ul>
       <li>No ads, and the app never reads your phone's advertising ID. We never sell your data or share it for advertising.</li>
       <li>Your transactions, budgets, goals, wallets, gold &amp; silver and zakat settings are stored in your account on Google Firebase so they sync between your devices and survive a phone change.</li>
-      <li>Shared spaces are optional. What you put in a shared space, with your name there and any receipt photo, is seen by the members of that space. Your personal space is seen by no one else.</li>
+      <li>Shared spaces are optional. What you put in a shared space, with your name there, your profile photo if you set one, the space's photo and any receipt photo, is seen by the members of that space. Your personal space is seen by no one else.</li>
       <li>Usage statistics are collected to improve the app. They never contain your amounts or notes.</li>
       <li>You can delete your account and all of its data at any time from inside the app.</li>
       <li>We do not ask for your location, contacts, phone number, messages or bank access.</li>
@@ -59,7 +59,7 @@
 <p>You sign in with an e-mail and password, with Google, or as a guest (an anonymous account with no e-mail). We keep your e-mail address and account ID so you can reach your data; with Google sign-in we also receive the name and profile-photo link Google shares. Passwords are handled by Firebase Authentication; we never see them. If a guest later saves their profile to an e-mail or Google account that already exists, the app copies the guest's data into that account (or leaves it behind, your choice) and erases the guest profile.</p>
 
 <h2>2. Your financial data</h2>
-<p>What you enter yourself, such as transactions (amount, category, date, note, wallet), categories, budgets, savings goals, wallets, recurring transactions, your gold and silver pieces (weight, karat, what you paid) and your preferences, is stored in Cloud Firestore under your account (your personal space), where no one else can read it; what you add to a shared space is stored in that space instead (see below). Receipt photos (a Pro feature, available once we switch it on) are compressed on your phone to a small JPEG and uploaded to Firebase Storage, in a folder that only your account can open. The transaction keeps the photo's private link, so the photo is shown wherever that transaction is: to you, and in a shared space to the members who can see that transaction (see below). We do not connect to your bank accounts and do not read bank messages.</p>
+<p>What you enter yourself, such as transactions (amount, category, date, note, wallet), categories, budgets, savings goals, wallets, recurring transactions, your gold and silver pieces (weight, karat, what you paid) and your preferences, is stored in Cloud Firestore under your account (your personal space), where no one else can read it; what you add to a shared space is stored in that space instead (see below). Receipt photos (a Pro feature, available once we switch it on) are compressed on your phone to a small JPEG and uploaded to Firebase Storage, in a folder that only your account can open. The transaction keeps the photo's private link, so the photo is shown wherever that transaction is: to you, and in a shared space to the members who can see that transaction (see below). If you choose a profile photo, or a photo for a shared space you own (once we switch photos on), it is cut to a small square JPEG on your phone and uploaded to the same private folder; its link is kept on your account and, in each shared space you are in, on your place there, so the members of that space see it. We do not connect to your bank accounts and do not read bank messages.</p>
 <p><strong>Shared spaces (optional).</strong> Beside your personal space you can create shared spaces, for example for your family, a trip or a business (creating one needs Pro), or join someone else's with an invite code (free). Each space is a separate book in Cloud Firestore, with its own transactions, categories, budgets, bills and recurring transactions, goals, wallets and gold &amp; silver. Inside a space:</p>
 <ul>
   <li>All members see the space's name and the name and role (owner, full access or limited access) of every member. Your name there is the one you type when you create or join the space; the app suggests your Google name and you can change it. Your e-mail address is never shown to them.</li>
@@ -77,7 +77,7 @@
   <li><strong>Internet:</strong> for syncing and the services below.</li>
   <li><strong>Biometrics:</strong> only to unlock the app lock; your fingerprint never leaves your phone and we never see it.</li>
   <li><strong>Notifications and run at start-up:</strong> to show reminders on time, even after the phone restarts. Each reminder has its own switch in the app, and the phone's settings can turn them all off.</li>
-  <li><strong>Photos and camera:</strong> the app has no photo-library permission. When you attach a receipt, Android's own photo picker or camera opens and only the picture you choose reaches the app.</li>
+  <li><strong>Photos and camera:</strong> the app has no photo-library permission. When you attach a receipt or choose a profile or space photo, Android's own photo picker or camera opens and only the picture you choose reaches the app.</li>
 </ul>
 
 <h2>5. Usage and crash data</h2>
@@ -117,6 +117,7 @@
   <li>Account and financial data: as long as your account exists; deleted when you delete the account.</li>
   <li>Shared spaces: as long as the space exists. When its owner deletes it, or deletes their account, everything in it is deleted. When you delete your account, what you added to the spaces you are still in is deleted with it; what you added to a space you had already left stays there until its owner deletes the space.</li>
   <li>Receipt photos: deleted when you remove the photo or delete its transaction yourself, and all of them when you delete your account. A photo whose transaction another member deleted, or whose space was deleted, is no longer shown in the app and stays in your private folder until you delete your account.</li>
+  <li>Profile and space photos: replaced when you choose a new one, deleted when you remove them, and all of them when you delete your account.</li>
   <li>Usage statistics: up to 14 months at Google, then only as aggregated totals.</li>
   <li>Crash reports: about 90 days.</li>
   <li>Purchase records: kept by Google Play and RevenueCat for billing, refunds and taxes under their own policies, also after the account is deleted.</li>
@@ -129,7 +130,7 @@
 
 <h2>10. Your choices and rights</h2>
 <ul>
-  <li><strong>Delete your account:</strong> Settings › Account › Delete account deletes your transactions, categories, budgets, goals, wallets, recurring transactions, gold &amp; silver, receipt photos and feedback, the shared spaces you own with everything in them, and what you added to the spaces you are in, then the account itself. Without the app: <a href="money-tracker-delete-account.html">how to delete your account</a>.</li>
+  <li><strong>Delete your account:</strong> Settings › Account › Delete account deletes your transactions, categories, budgets, goals, wallets, recurring transactions, gold &amp; silver, receipt photos, your profile photo and the photos of spaces you own, and feedback, the shared spaces you own with everything in them, and what you added to the spaces you are in, then the account itself. Without the app: <a href="money-tracker-delete-account.html">how to delete your account</a>.</li>
   <li><strong>Shared spaces:</strong> leave one from Settings › Account › Spaces; there the owner can also remove a member, change their role or delete the space.</li>
   <li>Deleting the account does not cancel a Pro subscription: cancel it in Google Play › Payments &amp; subscriptions › Subscriptions.</li>
   <li><strong>Usage statistics:</strong> there is no switch for them in the app. For any request about them, write to <a href="mailto:support.gebril@gmail.com">support.gebril@gmail.com</a>.</li>
